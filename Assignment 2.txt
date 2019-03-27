@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Assignment 2
 1.	Explain what is declaration, definition and initialization in Js.
 
@@ -8,3 +9,15 @@ Initialization-when you declare a variable it is automatically initialized, whic
 Definition-It is assigning a specified value to the variable .
 	Eg var y=8
 
+=======
+Assignment 2
+1.	Explain what is declaration, definition and initialization in Js.
+
+	Declaration-The variable is registered using a given name within the corresponding 	scope  e.g. var y;
+
+Initialization-when you declare a variable it is automatically initialized, which means memory is allocated for the variable by the JavaScript engine.
+
+Definition-It is assigning a specified value to the variable .
+	Eg var y=8
+
+>>>>>>> 17728f466e2efab2c74d1cc4f7cd4e73fc70f4cf
