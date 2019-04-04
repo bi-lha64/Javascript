@@ -19,4 +19,55 @@ function calculateFruitsCost(fruits,quantity){
 undefined
 calculateFruitsCost("banana",2)
 "2 bananas for KES 40"
+correction
+Write a program to calculate purchases from a kiosk. For e.g. given the fruit name 'orange' the program 
+should fetch its price (30.00) and multiply with the quantity requested (2) and return total cost in this printed format (2 Oranges for KES 60.00). 
+calculateFruitCost(fruitName, quantity)
+For example, calculateFruitCost('orange', 2) should return "2 Oranges for KES 60.00"
+var fruits={"mango":50,"oranges":60,"melon":30,"grapes":40,"banana":20};
+function calculatefruitcost(fruitName,quantity){
+	
+var fruits={"mango":50,"oranges":60,"melon":30,"grapes":40,"banana":20};
+	
+var price=fruits[fruitName]*quantity;
+return quantity+ " "+fruitName+ " "+ "for KES"+price;
+}
+
+
+calculatefruitcost("mango",2)
+"2 mango for KES100"
+
+calculatefruitcost("oranges",2)
+
+"2 oranges for KES120"
+var fruits={"mango":50,"oranges":60,"melon":30,"grapes":40,"banana":20}
+
+undefined
+for (prop in fruits) {console.log(prop)}
+
+mango
+
+ oranges
+
+ melon
+
+grapes
+
+ banana
+
+ 
+for (prop in fruits) {console.log(prop,fruits[prop])}
+
+ mango 50
+
+ oranges 60
+
+ melon 30
+
+ grapes 40
+
+banana 20
+
+
+
 
