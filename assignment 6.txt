@@ -1,0 +1,19 @@
+var kiosk = {
+    fruitone: 'mango',
+    fruittwo: 'orange',
+    get fruitName() {
+        return this.fruitone + ' ' + this.fruittwo;
+    },
+    set fruitName (name) {
+        var words = name.toString().split(' ');
+        this.fruitone = words[0] || '';
+        this.fruittwo = words[1] || '';
+    }
+}
+
+kiosk.fruitName = 'mango';
+kiosk.fruitName = 'orange';
+console.log(kiosk.fruitName); // mango
+console.log(kiosk.fruitName); // orange
+"mango "
+"orange "

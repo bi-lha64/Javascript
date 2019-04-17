@@ -1,0 +1,87 @@
+{REVISION NOTES
+function getname(){
+return "jane doe",
+}
+function getperson(name)(
+console.log(name());
+// 1.store a fuction inside a variable
+var name=function getname(){
+  return"Qtybilha"
+}
+//2. pass/return a fuction  as a parameter
+function getperson(funcname){
+  console.log(funcname);
+}
+
+getperson(getname)());
+IIFES
+(function getnames(){
+  console.log("jane doe");
+})();
+"jane doe"
+  return "Qtybvans"
+})();
+console.log(name);
+var name=(function getnames(){
+?
+  return "Nimrod"
+})();
+console.log(name);
+var name=(function getnames(){
+?
+  return "Antony"
+})();
+console.log(name);
+var name=(function getnames(){
+?
+  return "Joshua"
+})();
+console.log(name);
+var name=(function getnames(){
+?
+  return "Bilha"
+})();
+"
+console.log(name);
+"Qtybvans"
+"Nimrod"
+"Antony"
+"Joshua"
+"Bilha"
+CLOSURE
+function outer(x){
+  function inner(y){
+    console.log(x+y);
+  }
+  return inner;
+} 
+var plusfive=outer(5);
+plusfive(2);
+7
+MODULE PATTERN
+function getname(){
+  var name={
+    firstname: "Joshua",
+    lastname: "Nimrod"
+  }
+  return name;
+}
+console.log(getname().lastname);
+"Nimrod"
+function user(){
+  var username;
+  var password;
+  function dologin(usr,pwd){
+    username=usr;
+    password=pwd;
+   console.log("my username is "+ username);
+  }
+  var publicAPI={
+    login:dologin
+  }
+  return publicAPI;
+}
+var joshuaNimrod=user();
+joshuaNimrod.login("joshua",37244746)
+"my username is joshua"
+
