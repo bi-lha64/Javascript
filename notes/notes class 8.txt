@@ -1,0 +1,51 @@
+class  8
+var fruits["melon","banana","orange"]
+fruit[0];
+melon
+fruit[1]
+banana
+var fruits=["melon","bananas","avacado"]
+var [fruit1,fruit2,fruit3]=fruits;
+console.log(fruit1);
+
+
+let name=["Bilha","Wanjiku"]
+let[firstname,lastname]=name;
+console.log(firstname);
+
+let name="Viona Kwamboka";
+let [firstname,lastname]=name.split(" ");
+ alert(`Hi,${firstname}`)
+console.log(lastname);
+
+let data=["Viona","Kwamboka","Frontend dev","female"];
+let [firstname,,title]=data;
+alert(title);
+ console.log(title)
+
+let student={
+  name:"Viona",
+  age:9,
+  gender:"female",
+  profession:"frontend developer"
+
+let{name,firstname,age,profession="unknown"}=student;
+console.log(profession);
+
+for(let key in student){
+  if(student.hasOwnProperty(key)){
+    console.log(student[key]);
+  }
+}
+let{name,...rest}=student;
+console.log(name,rest);
+let name=fuction getName(){ return "Viona Kwamboka"}
+let name= () =>"Viona Kwamboka";
+console.log(name());
+
+let multiply=(a,b)=>a*b
+console.log(multiply(10,10));
+
+let division=(d,f)=>d/f
+console.log(division(100,5));
+}
