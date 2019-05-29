@@ -1,0 +1,96 @@
+constructor() {
+
+this.farms = [];
+
+this.vendors = [];
+
+this.products = [];
+
+this.orders = [];
+
+}
+
+
+addFarm(farmId,name,farmer,phone,address) {
+  this.farms.push(farmId);
+  this.farms.push(name);
+  this.farms.push(farmer);
+  this.farms.push(phone);
+  this.farms.push(address);
+}
+ removeFarm(farmId){
+   if( this.farms[0]===farmId){
+     this.farms=[]
+   }
+ }
+ updateFarm(farmId,name,farmer,phone,address){
+  this.farms.push(farmId);
+  this.farms.push(name);
+  this.farms.push(farmer);
+  this.farms.push(phone);
+  this.farms.push(address);
+   
+ }
+ getFarm(farmId){
+   if(this.farms[0]===farmId){
+     console.log(this.farms);
+   }
+   else{
+     console.log("the record does not exit");
+   }
+ }
+
+
+addvendors(vendorId,name,phone) {
+  this.vendors.push(vendorId);
+  this.vendors.push(name);
+  this.vendors.push(phone);
+  
+}
+ removevendors(vendorId){
+   if( this.vendors[0]===vendorId){
+     this.vendors=[]
+   }
+ }
+ updatevendors(vendorId,name,phone){
+  this.vendors.push(vendorId);
+  this.vendors.push(name);
+  this.vendors.push(phone);
+ 
+   
+ }
+ getvendors(vendorId){
+   if(this.vendors[0]===vendorId){
+     console.log(this.vendors);
+   }
+   else{
+     console.log("the record does not exit");
+   }
+ }
+addProduct(productId,name,price) {
+  this.products.push(productId);
+  this.products.push(name);
+  this.products.push(price);
+  
+}
+ removeProduct(productId){
+   if( this.products[0]===productId){
+     this.products=[]
+   }
+ }
+ updateProduct(productId,name,price){
+  this.products.push(productId);
+  this.products.push(name);
+  this.products.push(price);
+ 
+   
+ }
+ getProduct(productId){
+   if(this.products[0]===productId){
+     console.log(this.products);
+   }
+   else{
+     console.log("the record does not exit");
+   }
+ }
+

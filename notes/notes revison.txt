@@ -1,0 +1,56 @@
+SETTIMEOUT AND CALLBACK FUNCTION
+function pleaseCallMe{
+return "no credit ,Bilha"
+
+}
+setTimeout(pleaseCallMe,5000);
+setInterval(pleasecallMe,60);
+
+function fullName(firstName,lastName){
+  return`${firstName} {lastName}`
+}
+function ask(){
+  firstName=prompt("what is your firstName?")
+  lastName=prompt("what is your lastName?")
+  let name=fullName(firstName,lastName);//callback function
+  alert("Your name is "+ name);
+}
+ask(fullName)
+function gift(){
+  return"my love for you"
+}
+function receiveGift(gift){
+  alert("Taraaaaah...your gift is "+gift())
+  setTime(()=>alert("Taraaaaah...your gift is " +gift()),60)
+}
+receiveGift(gift)
+console.log("plant kunde")
+let myInterval=setInterval(()=>console.log("water kunde"),1000)
+setTimeout(()=>clearInterval(myInterval),3000)
+console.log("fertilizer kunde")
+"plant kunde"
+"fertilizer kunde"
+"water kunde"
+"plant kunde"
+"fertilizer kunde"
+"water kunde"
+"water kunde"
+
+CREATING  A PROMISE
+let weddingPromise=new Promise(function(resolve,reject){
+//   return resolve("I am at your wedding")
+  return setTimeout(()=> reject("sorry cta make"),60)
+  
+  
+})
+weddingPromise.catch(response => {
+  console.log(response);
+  
+})
+"sorry cta make"
+"sorry cta make"
+"sorry cta make"
+"sorry cta make"
+assignment of asyc and await
+
+   

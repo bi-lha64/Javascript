@@ -1,0 +1,61 @@
+class MumMboga {
+  
+  constructor() {
+    this.products = [];
+    this.carts = [];
+    this.orders = [];
+    this.customers  = [];
+  }
+  add product( productId, name, price, quantity){
+    this.product=(productId);
+    this.product=(name);
+    this.product=(price);
+    this.product=(quantity);
+    
+    
+    
+    
+  }
+  var product=(productId);
+  delete product.productId{
+  console.log(product);
+}
+
+  update product( productId, name, price, quantity){
+    this.product.push(productId);
+    this.product.push(name);
+    this.product.push(price);
+    this.product.push(quantity);
+  }
+    function product(productId) {
+        this.productId = productId;
+        this.getProduct = function () {
+            return this.productId
+        }
+ class ProductCatalog{
+  constructor(fruits,quantity){
+  this.fruits=fruits;
+  this.quantity=quantity;
+  this.fruitsPriceList = { "kiwi": 30, "grapes":20};
+}
+  getProductCatalog(){
+    var price=this.fruitsPriceList[this.fruits]*this.quantity;
+    return this.quantity + " " + this.fruits + " " + "for KES " + price;
+  }
+   var price=("kiwi",30);
+     console.log(productCatalog.getProductCatalog)
+    
+      
+    }
+add Cart(cartId, product, orderQuantity, customerId
+){
+  this.cartId=cartId;
+  this.product=product;
+  this.orderQuantity=orderQuantity;
+  this.customerId=customerId
+  
+}
+var removeCart=(productId);
+  delete cart.productId{
+  console.log(product);
+    

@@ -1,0 +1,90 @@
+
+adding object-push
+removing -
+class MumMboga {
+  
+  constructor() {
+    this.products = [];
+    this.carts = [];
+    this.orders = [];
+    this.customers  = [];
+  }
+  addProduct(productId,name,price,quantity){
+  let product = {
+      id:productId,
+      name:name,
+      price:price,
+      quantity:quantity
+  }
+  this.products.push(product)
+ 
+  }
+getProduct(productId){
+    for (var i=0;i< this.products.length;i++){
+      let product =this.products[i]
+      if (product.id===productId){
+        return product
+      }
+    
+  }  
+ }
+removeProduct(productId){
+  let product=this.getProduct(productId)
+  let index=this.products.indexOf(product)
+   this.products.splice(index,1)
+  }
+}
+}
+var mumMboga= new MumMboga ()
+mumMboga.addProduct(1,'tomatoes',30,5)
+mumMboga.addProduct(2,'kales',20,10)
+mumMboga.removeProduct(1,'tomatoes',30,5)
+console.log(mumMboga.products)
+console.log(mumMboga.products)
+[[object Object] {
+class Person{
+constructor(firstName,lastName){
+  this.firstName=firstName;
+  this.lastName=lastName;
+  
+  }
+  getFullName(){
+    return (this.firstName +" " + this.lastName);
+  }
+}
+  var person = new Person("Bilha","Wanjiku");
+  console.log(person.getFullName());
+class Person{
+  constructor(){
+    this.firstName=null;
+    this.lastName=null;
+    
+  }
+  setName(firstName,lastName){
+    this.firstName=firstName;
+    this.lastName=lastName;
+  }
+  getName(){
+    return this.firstName +" "+ this.lastName;
+    
+  }
+  
+  
+  
+}
+let person=new Person();
+person.setName("Bilha", "Wanjiku");
+console.log(person.getName());
+
+
+
+  id: 1,
+  name: "tomatoes",
+  price: 30,
+  quantity: 5
+}, [object Object] {
+  id: 2,
+  name: "kales",
+  price: 20,
+  quantity: 10
+}]

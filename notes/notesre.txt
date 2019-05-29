@@ -1,0 +1,26 @@
+summary of Javascript
+javascript is a programming language commonly used in web development
+A javascript engine is a computer program that executes Javascript code.
+examples of engines:
+V8-in chrome and opera
+SpiderMokey-in firefox
+Statements- is a complete line of code that performs some action
+eg: 	 var z=x+y;
+	 var y=5;
+Expression-Any unit of code that can be evaluated to a value is an expression
+eg :     	var x=y*3
+	alert(x);
+Output-
+ eg:      var code='goodbye friend';
+
+console.log(code);
+
+ goodbye friend
+Input-
+eg:	var CustomerName=("please enter your name");
+
+	console.log(CustomerName);
+
+ 	please enter your name
+
+	
