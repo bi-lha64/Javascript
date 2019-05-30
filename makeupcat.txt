@@ -1,0 +1,143 @@
+class Mkulima {
+  
+  constructor() {
+    this.farms = [];
+    this.vendors = [];
+    this.products = [];
+    this.orders = [];
+  }
+
+addFarm(farmId, name, farmer, phone, address){
+  let Farm={
+    Id:farmId,
+    name:name,
+    farmer:farmer,
+    phone:phone,
+    address:address,
+  
+  }
+  this.farms.push(Farm)
+  }
+  getFarm(farmId) {
+   for(var i=0; i<this.farms.length; i++) {
+     let farm = this.farms[i];
+     if (farm.farmId === farmId) {
+       return farm
+     }
+   }
+ }
+ removeFarm(farmId){
+ let farm=this.getFarm(farmId)
+ let index=this.farms.indexOf(farm)
+  this.farms.splice(index,2)
+ }
+  updateFarm(farmId, name, farmer, phone, address) {
+    let Farm={
+    Id:farmId,
+    name:name,
+    farmer:farmer,
+    phone:phone,
+    address:address,
+  
+    }
+    this.farms.push(Farm)
+  }
+    getVendor(vendorId) {
+    for(var i=0; i<this.vendors.length; i++) {
+      let vendor = this.vendors[i];
+      if (vendor.vendorId === vendorId) {
+        return vendor
+      }
+    }
+ }
+  
+ addVendor(vendorId, name, phone) {
+   let vendor = {
+     vendorId: vendorId,
+     name: name,
+     phone: phone
+}
+   this.vendors.push (vendor)
+ }
+  
+  getVendor(vendorId) {
+    for(var i=0; i<this.vendors.length; i++) {
+      let vendor = this.vendors[i];
+      if (vendor.vendorId === vendorId) {
+        return vendor
+      }
+    }
+ }
+  
+
+  removeVendor(vendorId) {
+    let vendor=this.getVendor(vendorId)
+ let index=this.vendors.indexOf(vendor)
+  this.vendors.splice(index,2)
+ 
+    
+  }
+   updateVendor (vendorId, name, phone) {
+     let Vendor={
+       Id:vendorId,
+       name:name,
+       phone:name
+       
+     }
+     this.vendors.push(Vendor)
+   }
+
+  addProduct(productId, name, price) {
+   let product = {
+     productId: productId,
+     name: name,
+     price: price
+   }
+   this.products.push (product)
+ }
+   getProduct(productId) {
+   for(var i=0; i<this.products.length; i++) {
+     let product = this.products[i];
+     if (product.productId == productId) {
+       return product
+     }
+    }
+   }
+ removeProduct(productId) {
+   let product = this.getProduct(productId)
+   let index = this.products.indexOf(product);
+   this.products.splice(index,1)
+ }
+   
+
+
+
+}
+var mkulima=new Mkulima()
+mkulima.addFarm(1,'Nimrod','plot1','0793966253','Ngara')
+mkulima.addFarm(2,'James','plot2','0793899253','Nyeri')
+console.log(mkulima.farms)
+
+mkulima.removeFarm(2,'James','plot2','0793899253','Nyeri')
+console.log(mkulima.farms)
+
+mkulima.updateFarm(3,'Bilha','shambagirl','0792920083','Karatina')
+console.log(mkulima.farms)
+
+var shamba=new Mkulima()
+shamba.addVendor(1,'Cynthia','0798684656')
+shamba.addVendor(2,'Lilian','0796788753')
+console.log(shamba.vendors)
+
+shamba.removeVendor(2,'Cynthia','0798684656')
+console.log(shamba.vendors)
+
+shamba.updateVendor(4,'Cate','0789537427')
+console.log(shamba.vendors)
+
+var desk=new Mkulima()
+desk.addProduct(1,'kunde',30,5)
+desk.addProduct(2,'kales',20,10)
+console.log(desk.products)
+desk.removePoduct(1,'kunde',30,5)
+console.log(desk.products)
