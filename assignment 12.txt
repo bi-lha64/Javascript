@@ -1,0 +1,17 @@
+var body=document.body
+body.style.backgroundColor = "silver" ;
+document.getElementById("title").style.color="green";
+
+var h3=document.getElementById=("boy");
+h3.style.textTransform="upperCase";
+
+var h3=document.getElementById=("girl");
+h3.style.textTransform="upperCase";
+
+var fruit=document.createElement("li");
+fruit.innerHTML="grapes";
+frulist.appendChild(fruit);
+
+var vegetable=document.createElement("li");
+fruit.innerHTML="cabbage";
+frulist.appendChild(vegetable);
