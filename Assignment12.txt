@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+ 
+  <title>Greens Kiosk</title>
+    
+</head>
+<body>
+  
+  
+
+  <h1 id="title">Welcome to Greens Kiosk</h1>
+  <p>We sell fruits and vegetables</p>
+  <h3>Fruits</h3>
+  <ul id="fruList">
+    <li>Mangoes</li>
+    <li>Bananas</li>
+    <li>Water Melons</li>
+    
+    <button onclick="myFunction()">submit</button>
+   
+    <script>
+function myFunction() {
+  var node = document.createElement("L1");
+  var textnode = document.createTextNode("grapes");
+  node.appendChild(textnode);
+  document.getElementById("fruList").appendChild(node);
+}
+</script>
+
+
+
+  </ul>
+  <h3>Vegetables</h3>
+  <ul id="vegList">
+    <li>Onions</li>
+    <li>Tomatoes</li>
+    <li>Kales</li>
+  
+    <button onclick="myFunction()">submit</button>
+   
+    <script>
+function myFunction() {
+  var node = document.createElement("L2");
+  var textnode = document.createTextNode("cabbages");
+  node.appendChild(textnode);
+  document.getElementById("vegList").appendChild(node);
+}
+</script>
+
+
+  
+  
+  
+  </ul>
+</body>
+</html>
+js code
+var setColor = ()=>{
+  var titleColor = document.getElementById("title");
+  titleColor.style.color = 
+  titleColor.style.color ==="gold"? "silver":"gold";
+    
+}
+setInterval(setColor,1000);
